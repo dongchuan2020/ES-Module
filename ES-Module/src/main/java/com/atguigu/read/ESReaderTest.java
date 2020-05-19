@@ -20,8 +20,9 @@ public class ESReaderTest {
         JestClientFactory jestClientFactory = new JestClientFactory();
 
         //1.2 创建配置信息
-        HttpClientConfig config = new HttpClientConfig.Builder("http://hadoop102:9200").build();
-        jestClientFactory.setHttpClientConfig(config);
+        jestClientFactory.setHttpClientConfig(
+                new HttpClientConfig.Builder("http://hadoop102:9200").build()
+        );
 
         //1.3 获取客户端对象
         JestClient jestClient = jestClientFactory.getObject();
