@@ -59,6 +59,6 @@ public class ESReaderTest {
     }
 
     public void test(){
-        System.out.println("分支添加！");
+        System.out.println("分支添加！****");
     }
 }
