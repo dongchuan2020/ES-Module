@@ -57,4 +57,8 @@ public class ESReaderTest {
         //3.关闭资源
         jestClient.shutdownClient();
     }
+
+    public void test(){
+        System.out.println("主干添加！");
+    }
 }
